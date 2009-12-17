@@ -1,0 +1,55 @@
+\documentclass[12pt,paper=a4,leqno]{book}
+\usepackage{graphics}                 % Packages to allow inclusion of graphics
+\usepackage{color}                    % For creating coloured text and background
+\usepackage{hyperref}                 % For creating hyperlinks in cross references
+
+\usepackage{ucs}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{arial}
+
+
+\parindent 1cm
+\parskip 0.2cm
+\topmargin 0.2cm
+\oddsidemargin 1cm
+\evensidemargin 0.5cm
+\textwidth 15cm
+\textheight 21cm
+
+\makeindex
+
+\title{Угсаатны нийлэгжилт ба Дэлхийн био хүрээ (шим мандал) }
+\author{Орчуулагч Д.Ганхуяг  \\
+{\small\em \copyright \  Ноорог хувилбар \today }}
+
+ \date{ }
+\begin{document}
+
+\maketitle
+ \addcontentsline{toc}{chapter}{Contents}
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+
+\include{gmlv_0}
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\include{gmlv_1}
+\include{gmlv_2}
+
+
+\begin{thebibliography}{99}
+  \addcontentsline{toc}{chapter}{Bibliography}
+\bibitem{lamport} L. Lamport. {\bf \LaTeX \ A Document Preparation System}
+Addison-Wesley, California 1986.
+\end{thebibliography}
+
+\include{index}
+  \addcontentsline{toc}{chapter}{Index}
+
+\end{document}
